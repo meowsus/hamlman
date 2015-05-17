@@ -1,0 +1,187 @@
+# Extension of the default configuration:
+# https://github.com/causes/scss-lint/blob/master/config/default.yml
+
+linters:
+  Comment:
+    enabled: false
+
+  DeclarationOrder:
+    enabled: true
+
+  ElsePlacement:
+    enabled: true
+    style: new_line
+
+  EmptyRule:
+    enabled: false
+
+  HexLength:
+    enabled: true
+    style: long
+
+  Indentation:
+    enabled: true
+    allow_non_nested_indentation: true
+    character: space
+    width: 4
+
+  LeadingZero:
+    enabled: true
+    style: include_zero
+
+  MergeableSelector:
+    enabled: true
+    force_nesting: false
+
+  PropertySortOrder:
+    enabled: true
+    ignore_unspecified: false
+    separate_groups: false
+    order:
+      - display
+      -
+      - position
+      - top
+      - right
+      - bottom
+      - left
+      - z-index
+      -
+      - margin
+      - margin-top
+      - margin-right
+      - margin-bottom
+      - margin-left
+      -
+      - margin-collapse
+      - margin-top-collapse
+      - margin-right-collapse
+      - margin-bottom-collapse
+      - margin-left-collapse
+      -
+      - padding
+      - padding-top
+      - padding-right
+      - padding-bottom
+      - padding-left
+      -
+      - width
+      - height
+      - max-width
+      - max-height
+      - min-width
+      - min-height
+      -
+      - float
+      - clear
+      -
+      - color
+      -
+      - font
+      - font-size
+      - font-style
+      - font-family
+      - font-weight
+      - font-smoothing
+      -
+      - line-height
+      - letter-spacing
+      - word-spacing
+      -
+      - text-align
+      - text-indent
+      - text-shadow
+      - text-overflow
+      - text-rendering
+      - text-transform
+      - text-decoration
+      - text-size-adjust
+      -
+      - word-break
+      - word-wrap
+      -
+      - white-space
+      -
+      - background
+      - background-size
+      - background-color
+      - background-image
+      - background-repeat
+      - background-position
+      - background-attachment
+      -
+      - border
+      - border-top
+      - border-right
+      - border-bottom
+      - border-left
+      -
+      - border-image
+      - border-spacing
+      - border-collapse
+      -
+      - border-color
+      - border-top-color
+      - border-right-color
+      - border-bottom-color
+      - border-left-color
+      -
+      - border-style
+      - border-top-style
+      - border-right-style
+      - border-bottom-style
+      - border-left-style
+      -
+      - border-width
+      - border-top-width
+      - border-right-width
+      - border-bottom-width
+      - border-left-width
+      -
+      - border-radius
+      - border-top-right-radius
+      - border-bottom-right-radius
+      - border-bottom-left-radius
+      - border-top-left-radius
+      - border-radius-topright
+      - border-radius-bottomright
+      - border-radius-bottomleft
+      - border-radius-topleft
+      -
+      - box-shadow
+
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_BEM
+
+  SingleLinePerSelector:
+    enabled: false
+
+  SpaceAfterPropertyColon:
+    enabled: true
+    style: at_least_one_space
+
+  SpaceBeforeBrace:
+    enabled: true
+    style: space
+    allow_single_line_padding: true
+
+  VariableForProperty:
+    enabled: true
+    properties:
+      - color
+      - font-family
+      - background-color
+
+  # These default settings may be problematic to implementors. They are not
+  # ommitted so that they may be adjusted as needed during an implementation.
+  #
+  # For documentation:
+  # https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
+
+  DuplicateProperty:
+    enabled: true
+
+  PropertySpelling:
+    enabled: true
+    extra_properties: [] # Add experimental CSS to this array, if needed
