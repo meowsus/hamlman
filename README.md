@@ -6,7 +6,7 @@ A Haml-based [Middleman](http://middlemanapp.com) starter project template.
 
 - [Install Middleman](https://middlemanapp.com/basics/install/)
 - Download the Hamlman project template
-    `git clone git@github.com:meowsus/hamlman ~/.middleman/hamlman`
+    + `git clone git@github.com:meowsus/hamlman ~/.middleman/hamlman`
 - Initialize a new Hamlman project
     + `middleman init my_project --template=hamlman`
 
