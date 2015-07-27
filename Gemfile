@@ -20,7 +20,7 @@ gem 'sass'
 gem 'scss-lint'
 
 # Autoprefixer
-gem 'middleman-autoprefixer'
+gem 'middleman-autoprefixer', '2.1.2'
 
 # EJS
 gem "ejs"
